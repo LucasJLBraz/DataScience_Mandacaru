@@ -1,0 +1,26 @@
+# Jupyter
+.cache
+.ipynb_checkpoints
+__pycache__
+.keras
+.local
+.cache/
+.config/
+.gradio/
+.ipython/
+.jupyter/
+.keras/
+.local/
+.nv/
+
+
+# Bash
+# Bash history
+.bash_history
+
+
+# Python
+.python_history
+
+# NTLK
+nltk_data
