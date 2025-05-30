@@ -1,0 +1,11 @@
+{
+    "BERT_MODEL": "bert-base-uncased",
+    "PRE_TRAINED_MODEL": "/home/apo-pc/Documents/GitHub/DataScience_Mandacaru/models/sentiment_bert_model_tensorflow",
+    "CLASS_NAMES": [
+        "positive",
+        "neutral",
+        "negative"
+    ],
+    "LABEL_ENCODER": "/home/apo-pc/Documents/GitHub/DataScience_Mandacaru/models/label_encoder.pkl",
+    "MAX_LENGTH": 100
+}

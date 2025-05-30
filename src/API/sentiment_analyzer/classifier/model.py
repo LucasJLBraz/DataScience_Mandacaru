@@ -40,12 +40,6 @@ class Model:
     def predict(self, text):
         encoded_text = self.tokenizer.encode_plus(
             text,
-            # max_length=config["MAX_SEQUENCE_LEN"],
-            # add_special_tokens=True,
-            # return_token_type_ids=False,
-            # pad_to_max_length=True,
-            # return_attention_mask=True,
-            # return_tensors="pt",
             max_length=50,
             add_special_tokens=True,
             padding='max_length',
@@ -66,11 +60,6 @@ class Model:
         # Use the label encoder here
         predicted_label = label_encoder.inverse_transform([predicted_class])[0]
 
-        # return (
-        #     config["CLASS_NAMES"][predicted_class],
-        #     confidence,
-        #     dict(zip(config["CLASS_NAMES"], probabilities)),
-        # )
 
         return (
         predicted_label,

@@ -10,6 +10,9 @@ from gradio import Interface, Text, Number, Dropdown, HTML, Label, TabbedInterfa
 def predict_sentiment(text: str):
     data = {"text": text}
     response = requests.post("http://localhost:8000/predict", json=data)
+    if response.status_code != 200:
+        return "Error: Unable to get prediction from the model."
+    # Parse the response
     result = response.json()
     sentiment = result['sentiment']
     confidence = result['confidence']
@@ -90,8 +93,8 @@ iface = TabbedInterface([
         ["Market indices displayed a neutral trend, reflecting the uncertainty in economic conditions."],
         ["Investors faced challenges today as several energy stocks, including ExxonMobil (XOM), recorded notable declines."]
     ],
-    title="Classificador de Sentimentos: Time 10",
-    description="Esta é uma interface para o classificador de sentimentos do time 10. Digite um texto e clique em 'Submeter' para ver a predição do modelo."
+    title="Classificador de Sentimentos",
+    description="Esta é uma interface para o classificador de sentimentos. Digite um texto e clique em 'Submeter' para ver a predição do modelo."
     ),
     Interface(
     theme=gr.themes.Soft(),
@@ -110,4 +113,4 @@ iface = TabbedInterface([
 
 iface.queue()
 
-iface.launch()
+iface.launch(server_port=7860, share=False, debug=True)
