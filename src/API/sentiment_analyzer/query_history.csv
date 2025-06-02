@@ -1,6 +1,0 @@
-Texto,Sentimento,Confiança,Probabilidades
-"I love mandacaru.dev, it's the best course ever!",Positivo,0.9988343119621277,"{'Positivo': 0.9988343119621277, 'Negativo': 0.00036293192533776164, 'Neutro': 0.0008027167641557753}"
-"Stocks remained stable today, with the S&P 500 showing a minimal change of +0.1%.",Negativo,0.5409287810325623,"{'Positivo': 0.38332563638687134, 'Negativo': 0.5409287810325623, 'Neutro': 0.0757456049323082}"
-,Neutro,0.9339362382888794,"{'Positivo': 0.006355500780045986, 'Negativo': 0.05970829725265503, 'Neutro': 0.9339362382888794}"
-,Neutro,0.9339362382888794,"{'Positivo': 0.006355500780045986, 'Negativo': 0.05970829725265503, 'Neutro': 0.9339362382888794}"
-,Neutro,0.9339362382888794,"{'Positivo': 0.006355500780045986, 'Negativo': 0.05970829725265503, 'Neutro': 0.9339362382888794}"

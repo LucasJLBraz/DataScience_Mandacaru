@@ -1,0 +1,12 @@
+pandas
+numpy
+matplotlib
+seaborn
+nltk
+sentence-transformers
+gensim
+scikit-learn
+scipy
+flask
+streamlit
+requests
